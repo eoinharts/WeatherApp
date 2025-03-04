@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Display</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="temperature-page" onload="displayTemperature()">
+    <header>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="temperature.html">Temperature</a>
+        <a href="humidity.html">Humidity</a>
+        <a href="windSpeed.html">Wind</a>
+        <a href="uvIndex.html">UV Index</a>
+    </nav>
+    <main class="weather-container">
+        <h1>Current Temperature</h1>
+        <p id="temperature">N/A</p>
+        <button onclick="toggleTemperature()">Toggle Fahrenheit/Celsius</button>
+        
+        <svg id="thermometer" width="420" height="420" viewBox="0 0 50 100">
+            <rect x="20" y="10" width="10" height="80" fill="gray" stroke="black" stroke-width="2"/>
+            <rect id="mercury" x="20" y="50" width="10" height="40" fill="blue"/>
+            <circle cx="25" cy="90" r="15" fill="red"/>
+        </svg>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
