@@ -73,7 +73,7 @@ function updateSVGFill(elementId, color) {
 
 
 // **Update all icons dynamically based on weather conditions**
-// **Update Weather Icons Only if Elements Exist**
+
 function updateWeatherIcons(cityData) {
     if (!cityData) return;
 
